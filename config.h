@@ -11,9 +11,10 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Sauce Code Nerd Fonts:size=10",
-					"WenQuanYi Micro Hei:size=9:type=Regular:antialias=true:autohint=true"
-									};
+/*static const char *fonts[]          = { "Sauce Code Nerd Fonts:size=13",
+					"WenQuanYi Micro Hei:size=13:type=Regular:antialias=true:autohint=true"
+									};*/
+static const char *fonts[]               = { "JetBrainsMono Nerd Font:style=medium:size=13", "monospace:size=13", "WenQuanYi Micro Hei:size=13:type=Regular:antialias=true:autohint=true" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -26,7 +27,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", ""  };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -46,7 +47,7 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "Tile",      tile },    /* first entry is default */
+	{ "﬿",      tile },    /* first entry is default */
 	{ "NULL",      NULL },    /* no layout function means floating behavior*/
 	{"[m]",     monocle}
 };
